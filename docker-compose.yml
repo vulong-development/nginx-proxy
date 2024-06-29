@@ -6,7 +6,6 @@ services:
     container_name: nginx-proxy
     networks:
       - testnet
-    # attach: false
     ports:
       - 80:80
 
