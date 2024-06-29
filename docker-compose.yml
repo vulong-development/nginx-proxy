@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  nginx-proxy:
+    image: nginx-proxy:v1
+    container_name: nginx-proxy
+    networks:
+      - testnet
+    # attach: false
+    ports:
+      - 80:80
+
+networks:
+  testnet:
+    name: testnet
+    external: true
